@@ -1,0 +1,88 @@
+seed: 1234
+dist_config:
+  dist_backend: "nccl"
+  dist_url: "tcp://localhost:54321"
+  world_size: 1
+path:
+  ckpt_path: "./output/ckpt/L2ARCTIC"
+  log_path: "./output/log/L2ARCTIC"
+  result_path: "./output/result/L2ARCTIC"
+  array_path: "./output/arrays/L2ARCTIC"
+  plot_path: "./output/plots/L2ARCTIC"
+optimizer:
+  batch_size: 64
+  betas: [0.9, 0.98]
+  eps: 0.000000001
+  weight_decay: 0.0
+  grad_clip_thresh: 1.0
+  grad_acc_step: 1
+  warm_up_step: 4000
+  anneal_steps: [100000, 140000, 170000]
+  anneal_rate: 0.3
+  vae_lr: 0.001
+loss:
+  noise_loss: "l1"
+  dur_loss: "mse"
+  pitch_loss: "l1"
+  cwt_loss: "l1"
+  # cwt_add_f0_loss: false
+  lambda_f0: 1.0
+  lambda_uv: 1.0
+  lambda_ph_dur: 1.0
+  lambda_word_dur: 0.0 # lambda_word_dur should not be activated, otherwise it will produce NaN value (For VCTK)
+  lambda_sent_dur: 1.0
+step:
+  total_step: 300000
+  log_step: 100
+  synth_step: 100
+  val_step: 5000
+  save_step: 16000
+  var_start_steps: 50000
+  restore_step: 600000
+  constant_steps: True
+duration:
+  binarization_start_steps: 6000
+  binarization_loss_enable_steps: 18000
+  binarization_loss_warmup_steps: 10000
+prosody:
+  gmm_mdn_beta: 0.02
+  prosody_loss_enable_steps: 100000
+cyclic_anneling:
+  start: 1.0
+  stop: 1.0
+  n_cycle: 4
+  ratio: 0.5
+
+linbuildkl:
+  type: "expo"
+  start: -2
+  stop: 0
+  n_up: 5000
+  n_stop: 15000
+
+linbuildadv:
+  type: "expo"
+  start: 0
+  stop: 0
+  n_up: 0
+  n_stop: 2500
+
+linbuildce:
+  type: "expo"
+  start: 0
+  stop: 0
+  n_up: 0
+  n_stop: 2000
+
+coeffs:
+  acc_kl: 0.0001
+  spk_kl: 0.0001
+  acc_adv: 0.01
+  spk_adv: 0.0
+  acc_ce: 0.1
+  spk_ce: 0.0
+  reco: 1
+
+freeze_backbone: True
+
+n_accent_classes: 6
