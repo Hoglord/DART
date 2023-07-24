@@ -153,31 +153,39 @@ if __name__ == "__main__":
     #     required=True,
     #     help="Synthesize a whole dataset or a single sentence",
     # )
-    # parser.add_argument(
-    #     "--pitch_control",
-    #     type=float,
-    #     default=1.0,
-    #     help="control the pitch of the whole utterance, larger value for higher pitch",
-    # )
-    # parser.add_argument(
-    #     "--energy_control",
-    #     type=float,
-    #     default=1.0,
-    #     help="control the energy of the whole utterance, larger value for larger volume",
-    # )
-    # parser.add_argument(
-    #     "--duration_control",
-    #     type=float,
-    #     default=1.0,
-    #     help="control the speed of the whole utterance, larger value for slower speaking rate",
-    # )
+    parser.add_argument(
+        "--pitch_control",
+        type=float,
+        default=1.0,
+        help="control the pitch of the whole utterance, larger value for higher pitch",
+    )
+    parser.add_argument(
+        "--energy_control",
+        type=float,
+        default=1.0,
+        help="control the energy of the whole utterance, larger value for larger volume",
+    )
+    parser.add_argument(
+        "--duration_control",
+        type=float,
+        default=1.0,
+        help="control the speed of the whole utterance, larger value for slower speaking rate",
+    )
+    parser.add_argument("--restore_step", type=int, default=704000)
+    parser.add_argument(
+        "--dataset",
+        type=str,
+        required=True,
+        default=L2ARCTIC,
+        help="name of dataset",
+    )
     args = parser.parse_args()
 
     listening_test_path="./output/result/L2ARCTIC/listening_test"
-    args.dataset='L2ARCTIC'
-    args.pitch_control=1.0
-    args.energy_control=1.0
-    args.duration_control=1.0
+    # args.dataset='L2ARCTIC'
+    # args.pitch_control=1.0
+    # args.energy_control=1.0
+    # args.duration_control=1.0
     args.mode='single'
 
     # args.source='val.txt'
@@ -186,7 +194,7 @@ if __name__ == "__main__":
     # args.basename='SVBI_a0009'
     # args.speaker_id='SVBI'
     # args.accent='Hindi'
-    args.restore_step=704000
+    # args.restore_step=704000
     args.text='He turned sharply and faced Gregson across the table'
 
 
