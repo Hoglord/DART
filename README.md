@@ -1,4 +1,4 @@
-This is a demo repo for STAR-TTS, submitted to ASRU 2023
+This is a demo repo for STAR-TTS, submitted to SLT2024
 
 Code used in the paper is here
 
