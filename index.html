@@ -14604,6 +14604,9 @@ Utterance 7: Everything was working smoothly better than I had expected.</p>
  <tr>
     <td style="text-align: left"><b style="font-size:14px">Ground Truth</b></td> 
     <td style="text-align: left"><b style="font-size:14px">MLVAE-Tacotron</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fastspeech2-GE2E</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fastspeech2-GST</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fastspeech2-GST-GE2E</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTSscratch</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTS without VQ</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTS</b></td>
@@ -14625,6 +14628,34 @@ Speaker: THV (Vietnamese) <audio src="samples/MOS/GT/THVarctic_b0017.wav" contro
 <audio src="samples/MOS/MLVAETaco/SVBIarctic_b0364.wav" controls>alternative text</audio><br/>
 <audio src="samples/MOS/MLVAETaco/THVarctic_b0017.wav" controls>alternative text</audio><br/>
     </td>
+
+    <td><audio src="samples/MOS/ge2e/ABAarctic_a0469.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2e/EBVSarctic_b0045.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2e/HKKarctic_b0254.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2e/LXCarctic_a0528.wav" controls>alternative text</audio>
+      <audio src="samples/MOS/ge2e/NCCarctic_b0157.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2e/SVBIarctic_b0364.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2e/THVarctic_b0017.wav" controls>alternative text</audio><br/>
+    </td>
+
+    <td><audio src="samples/MOS/gst/ABAarctic_a0469.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/gst/EBVSarctic_b0045.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/gst/HKKarctic_b0254.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/gst/LXCarctic_a0528.wav" controls>alternative text</audio>
+      <audio src="samples/MOS/gst/NCCarctic_b0157.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/gst/SVBIarctic_b0364.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/gst/THVarctic_b0017.wav" controls>alternative text</audio><br/>
+    </td>
+
+    <td><audio src="samples/MOS/ge2egst/ABAarctic_a0469.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2egst/EBVSarctic_b0045.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2egst/HKKarctic_b0254.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2egst/LXCarctic_a0528.wav" controls>alternative text</audio>
+      <audio src="samples/MOS/ge2egst/NCCarctic_b0157.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2egst/SVBIarctic_b0364.wav" controls>alternative text</audio><br/>
+      <audio src="samples/MOS/ge2egst/THVarctic_b0017.wav" controls>alternative text</audio><br/>
+    </td>
+
     <td><audio src="samples/MOS/STAR-TTSscratch/ABAarctic_a0469.wav" controls>alternative text</audio><br/>
 <audio src="samples/MOS/STAR-TTSscratch/EBVSarctic_b0045.wav" controls>alternative text</audio><br/>
 <audio src="samples/MOS/STAR-TTSscratch/HKKarctic_b0254.wav" controls>alternative text</audio><br/>
@@ -14672,6 +14703,8 @@ Utterance 4: And you always come to that shop to order the same meal.<br/></p>
     <td style="text-align: left"><b style="font-size:14px">Source Ground Truth</b></td> 
     <td style="text-align: left"><b style="font-size:14px">STAR-TTS no conversion (for reference)</b></td>
     <td style="text-align: left"><b style="font-size:14px">MLVAE-Tacotron</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fastspeech2-GST</b></td>
+    <td style="text-align: left"><b style="font-size:14px">Fastspeech2-GST-GE2E</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTSscratch</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTS without VQ</b></td>
     <td style="text-align: left"><b style="font-size:14px">STAR-TTS64</b></td>
@@ -14695,6 +14728,19 @@ Utterance 4: And you always come to that shop to order the same meal.<br/></p>
         <audio src="samples/conversion/MLVAETaco/SVBI_Chinese_I will go inside and tell the truth.wav" controls>alternative text</audio><br/>
         <audio src="samples/conversion/MLVAETaco/THV_Hindi_And you always come to that shop to order the same meal.wav" controls>alternative text</audio><br/>
     </td>     
+
+    <td><audio src="samples/conversion/gst/ABA_Vietnamese_This piece of cake is so yummy, I can't wait to bake another one.wav" controls>alternative text</audio><br/>
+      <audio src="samples/conversion/gst/NCC_Arabic_Without you, I would not be able to do it.wav" controls>alternative text</audio><br/>
+      <audio src="samples/conversion/gst/SVBI_Chinese_I will go inside and tell the truth.wav" controls>alternative text</audio><br/>
+      <audio src="samples/conversion/gst/THV_Hindi_And you always come to that shop to order the same meal.wav" controls>alternative text</audio><br/>
+  </td>     
+
+  <td><audio src="samples/conversion/ge2egst/ABA_Vietnamese_This piece of cake is so yummy, I can't wait to bake another one.wav" controls>alternative text</audio><br/>
+    <audio src="samples/conversion/ge2egst/NCC_Arabic_Without you, I would not be able to do it.wav" controls>alternative text</audio><br/>
+    <audio src="samples/conversion/ge2egst/SVBI_Chinese_I will go inside and tell the truth.wav" controls>alternative text</audio><br/>
+    <audio src="samples/conversion/ge2egst/THV_Hindi_And you always come to that shop to order the same meal.wav" controls>alternative text</audio><br/>
+</td>     
+
      <td><audio src="samples/conversion/STAR-TTSscratch/ABA_Vietnamese_This piece of cake is so yummy, I can't wait to bake another one.wav" controls>alternative text</audio><br/>
         <audio src="samples/conversion/STAR-TTSscratch/NCC_Arabic_Without you, I would not be able to do it.wav" controls>alternative text</audio><br/>
         <audio src="samples/conversion/STAR-TTSscratch/SVBI_Chinese_I will go inside and tell the truth.wav" controls>alternative text</audio><br/>
