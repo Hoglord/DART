@@ -1,8 +1,8 @@
-This is a demo repo for STAR-TTS, submitted to SLT2024
+This is a demo repo for DART, submitted to Audio Imagination workshop at NeurIPS 2024
 
 Code used in the paper is here
 
-Audio samples are on the associated webpage: https://hoglord.github.io/STAR-TTS/
+Audio samples are on the associated webpage: https://hoglord.github.io/DART/
 
 This code is based on https://github.com/keonlee9420/Comprehensive-Transformer-TTS
 
