@@ -1,4 +1,4 @@
-This is a demo repo for DART, submitted to Audio Imagination workshop at NeurIPS 2024
+This is a demo repo for DART, accepted in the Audio Imagination workshop of NeurIPS 2024
 
 Code used in the paper is here
 
