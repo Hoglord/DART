@@ -2,7 +2,7 @@ This is a demo repo for DART, accepted in the Audio Imagination workshop of Neur
 
 Code used in the paper is here
 
-Audio samples are on the associated webpage: https://dapwner.github.io/DART/
+Audio samples are on the associated webpage: https://amaai-lab.github.io/DART/
 
 This code is based on https://github.com/keonlee9420/Comprehensive-Transformer-TTS
 
